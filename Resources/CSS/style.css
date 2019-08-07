@@ -70,6 +70,16 @@ Design Styles
 }
 
 /************ Register ************/
+.newsletter{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icheckbox {
+  padding: 3px;
+}
+
 .button {
   background-color: #005282;
   -moz-border-radius: 10px;

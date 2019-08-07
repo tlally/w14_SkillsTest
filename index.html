@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="./Resources/CSS/style.css">
 
   <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.js"
-  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <script src="./Resources/JS/icheck/icheck.js"></script>
   <script src="./Resources/JS/countdown-timer.min.js"></script>
   <script src="./Resources/JS/scripts.js" charset="utf-8"></script>
 </head>
@@ -39,13 +40,18 @@
     </div>
     <div class="register">
       <div class="newsletter">
-        <input type="checkbox" class="newsletter_1" id="newsletter" name="newsletter" >
+        <div class="icheckbox disabled"><input type="checkbox" class="newsletter_1" id="newsletter" name="newsletter" ></div>
         <label for="newsletter">I would like to receive a free newsletter</label>
       </div>
       <a href="#" class="button" id="button_1">Register for this FREE <br> live Webinar Here!</a>
-      <span class="success" id="success_1"></span>
+      <div class="">
+        <span class="success" id="success_1"></span>
+      </div>
+
 
     </div>
+
+    <!-- Calender and Countdown-->
     <div class="calendar">
       <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_Calendar.png" alt="Calendar img">
       <h2>May 29th</h2>
@@ -57,6 +63,8 @@
 
 
     </div>
+
+    <!-- Author and Info-->
     <div class="author">
       <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/RGS/RGS_Hotlist_0617/RGS_Hotlist_0617_JimRickards.png" alt="photo of JAMES G. RICKARDS">
       <p><i>Presented by best-selling author and gold expert…</i></p>
@@ -101,12 +109,17 @@
 
       </div>
       <div class="newsletter">
-        <input type="checkbox" class="newsletter_2"  id="newsletter" name="newsletter" >
+        <div class="icheckbox disabled">
+          <input type="checkbox" class="newsletter_2"  id="newsletter" name="newsletter" >
+          </div
         <label for="newsletter">I would like to receive a free newsletter</label>
       </div>
 
       <a href="#" class="button" id="button_2">Yes! Reserve My Spot Now! >></a>
-      <span class="success" id="success_2"></span>
+      <div class="">
+        <span class="success" id="success_2"></span>
+      </div>
+
     </div>
   </div>
 
