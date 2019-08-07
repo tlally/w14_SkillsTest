@@ -56,24 +56,24 @@ $(document).ready(function(date) {
     }
   });
 
-// Created an event that when either blue buttons are clicked, and both checkboxes checked, an ajax call will be executed.
+  // Created an event that when either blue buttons are clicked, and both checkboxes checked, an ajax call will be executed.
 
   $(".button").click(function() {
 
-     ($(".newsletter_1:checked,.newsletter_2:checked").length == 2) {
+    if ($(".newsletter_1:checked,.newsletter_2:checked").length == 2) {
 
 
 
 
-        $.ajax({
-          url: 'https://bl45immth4.execute-api.us-east-1.amazonaws.com/production/',
-          data: '',
-          success: function(data){
-            var x = JSON.parse(data.body) //parse the data at the internal object.
-            $(".success").html(x.submitok) //pushed content from object to the Dom
-          }
+      $.ajax({
+        url: 'https://bl45immth4.execute-api.us-east-1.amazonaws.com/production/',
+        data: '',
+        success: function(data) {
+          var x = JSON.parse(data.body) //parse the data at the internal object.
+          $(".success").html(x.submitok) //pushed content from object to the Dom
+        }
 
-        });
+      });
 
 
 
@@ -81,7 +81,7 @@ $(document).ready(function(date) {
 
 
     } else {
-      // If both checkboxes are not checked when either button is pushed, alert will open reminding them to check the boxes before proceeding. 
+      // If both checkboxes are not checked when either button is pushed, alert will open reminding them to check the boxes before proceeding.
       alert("Please check the checkbox before proceeding.")
 
     }
